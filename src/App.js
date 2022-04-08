@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Appshell from './components/Appshell';
 
 var clickFlag = false;
 function App() {
@@ -30,10 +31,15 @@ function App() {
   let posts = '리액트에 대해서 질문합니다';
   return (
     <div className="App">
+      
+   {/*
       <div className="black-nav">
         <div style={ { marginRight: 20 } }> MI StackOverFlow</div>
         <MainInput></MainInput>
       </div>
+   */}
+
+     <Appshell/>
       <div className="leftdiv">
       <SideToolBar></SideToolBar>
       </div>
